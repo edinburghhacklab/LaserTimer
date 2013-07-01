@@ -9,6 +9,7 @@ http://www.edinburghhacklab.com
 Features:
 
 - Tracks total laser tube usage time.
+- Output to LCD and serial port.
 - Writes total to EEPROM when power is turned off.
 
 Requires:
@@ -20,7 +21,7 @@ Requires:
 
 Wiring diagram:
 
-D2 -- Laser PSU Enable Input
+A0 -- Laser PSU control signal
 
 5V --+
      |
