@@ -21,7 +21,7 @@ Requires:
 
 Wiring diagram:
 
-A0 -- Laser PSU control signal
+D2 -- Laser PSU Enable Input
 
 5V --+
      |
