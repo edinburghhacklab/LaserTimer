@@ -46,3 +46,7 @@ D6 --+-------+
     | |     ===
      |       |
 GND -+-------+
+
+Bugs:
+
+- usage counter will rollover around 1193 hours.
