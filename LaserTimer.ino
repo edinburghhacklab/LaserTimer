@@ -59,11 +59,15 @@ void loop() {
 
 void inputChanged() {
   unsigned long time = millis();
-  if (laser_on)
-    total += time - last_on;
-  else
+  boolean new_laser_on = !digitalRead(2);
+  if (new_laser_on && !laser_on) {
+    // laser is now on
     last_on = time;
-  laser_on = !digitalRead(2);
+  } else if (!new_laser_on && laser_on) {
+    // laser is now off
+    total += time - last_on;
+  }
+  laser_on = new_laser_on;
 }
 
 void supplyFalling() {
